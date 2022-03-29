@@ -85,6 +85,13 @@ nav img {
     color: rgb(70, 70, 70);
 }
 
+.main-headline {
+    font-size: 3.5rem;
+    color: rgb(58, 58, 58);
+    font-weight: bold;
+    padding: 20px 0;
+}
+
 
 /* Small Screen */
 @media (min-width: 768px) {
