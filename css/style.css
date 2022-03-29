@@ -57,6 +57,13 @@ nav img {
     height: 25px;
 }
 
+.nav-wrap {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 /* Small Screen */
 @media (min-width: 768px) {
