@@ -64,6 +64,11 @@ nav img {
     justify-content: space-between;
 }
 
+.nav-container {
+    position: relative;
+    height: 350px;
+    background-color: rgb(240, 240, 240);
+}
 
 /* Small Screen */
 @media (min-width: 768px) {
