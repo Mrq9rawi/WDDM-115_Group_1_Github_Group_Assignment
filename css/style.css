@@ -70,6 +70,16 @@ nav img {
     background-color: rgb(240, 240, 240);
 }
 
+.text {
+    font-family: inherit;
+    width: 100%;
+    position: absolute;
+    min-width: 42%;
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 100px;
+}
+
 /* Small Screen */
 @media (min-width: 768px) {
 	.container {
