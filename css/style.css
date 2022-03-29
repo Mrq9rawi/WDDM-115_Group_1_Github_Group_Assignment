@@ -20,15 +20,7 @@ body {
     align-content: center;
 }
 
-nav {
-    height: 80px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10%;
-    background-color: #fff;
-}
+
 
 html {
 	scroll-behavior: smooth;
@@ -50,6 +42,21 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    background-color: #fff;
+}
+
+nav img {
+    height: 25px;
+}
+
 
 /* Small Screen */
 @media (min-width: 768px) {
