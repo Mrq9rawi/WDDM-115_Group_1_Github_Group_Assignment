@@ -63,6 +63,10 @@ a {
 
 /* Description Start */
 
+main .description {
+	padding-top: var(--main-section-padding);
+}
+
 main .description .header {
 	margin-bottom: 50px;
 	border-bottom: 2px solid #707070;
