@@ -80,6 +80,12 @@ nav img {
     padding-top: 100px;
 }
 
+.main-sub, .main-sub2 {
+    font-size: 1.5rem;
+    color: rgb(70, 70, 70);
+}
+
+
 /* Small Screen */
 @media (min-width: 768px) {
 	.container {
