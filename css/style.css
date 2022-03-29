@@ -74,6 +74,7 @@ main .description .header h3 {
 }
 
 main .description .header h1 {
+	font-size: 40px;
 }
 
 /* Description End */
