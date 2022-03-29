@@ -64,20 +64,16 @@ a {
 /* Description Start */
 
 main .description .header {
-margin-bottom: 50px;
-border-bottom: 2px solid #707070;
-}
-
-main .description .header .container {
-
+	margin-bottom: 50px;
+	border-bottom: 2px solid #707070;
 }
 
 main .description .header h3 {
-
+	font-weight: 300;
+	font-size: 18px;
 }
 
 main .description .header h1 {
-
 }
 
 /* Description End */
