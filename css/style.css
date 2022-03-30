@@ -70,6 +70,7 @@ main .description {
 main .description .header {
 	margin-bottom: 50px;
 	border-bottom: 2px solid #707070;
+	padding-bottom: 25px;
 }
 
 main .description .header h3 {
@@ -79,6 +80,18 @@ main .description .header h3 {
 
 main .description .header h1 {
 	font-size: 40px;
+}
+
+main .description .text-content {
+	margin-left: 30px;
+}
+
+main .description .text-content h3 {
+	margin-bottom: 25px;
+}
+
+main .description .text-content > p {
+	margin-bottom: 20px;
 }
 
 /* Description End */
