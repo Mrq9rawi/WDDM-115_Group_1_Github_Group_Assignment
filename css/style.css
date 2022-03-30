@@ -159,3 +159,7 @@ main .description .text-content > p {
 
 /* Image Start */
 
+.img{
+	align-content: center;
+	padding-top: 50px;
+}
