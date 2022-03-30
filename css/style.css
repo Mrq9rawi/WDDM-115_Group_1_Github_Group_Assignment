@@ -163,3 +163,9 @@ main .description .text-content > p {
 	align-content: center;
 	padding-top: 50px;
 }
+.submission h3{
+	font-size: 18px;
+	font-family: inherit;
+	font-weight: 500;
+	
+}
