@@ -185,4 +185,5 @@ main .description .text-content > p {
 
 footer {
 	background-color: #bbbbbb;
+	display:flex;
 }
