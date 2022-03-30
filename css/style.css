@@ -193,55 +193,81 @@ main .description .text-content > p {
 /* Description End */
 /* Image Start */
 
-.img{
-	display: block;
-	align-content: center;
-	justify-content: center;
-	padding-top: 50px;
-	margin: auto;
-}
-.submission h3 {
-	font-size: 18px;
-	font-family: inherit;
-	font-weight: 500;
-	padding-left: 40px;
-	
+.img {
+	padding-top: var(--main-section-padding);
 }
 
-.paragraph {
-	margin-left: 40px;
-	border-radius: 2pt;
-	border-style: groove;
-	background-color: #fff;
-	width: fit-content;
-	padding: 10px 12px;
+.img .container img {
+	max-width: 100%;
+	margin-left: 30px;
 }
+
+/* Image End */
+/* Submission Start */
+
+.submission {
+	padding-top: var(--main-section-padding);
+	padding-bottom: var(--main-section-padding);
+}
+
+.submission .container .wrapper {
+	margin-left: 30px;
+	border-top: 2px dashed #a09e9e;
+	padding-top: 30px;
+}
+
+.submission .container .wrapper h1 {
+	margin-bottom: 20px;
+}
+
+.submission .container .wrapper input {
+	width: 95%;
+	height: 90px;
+	border: 2px solid #dddddd;
+	position: relative;
+	outline: none;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+.submission .container .wrapper input::placeholder {
+	color: #a5a2a2;
+	position: absolute;
+	font-size: 16px;
+}
+
+/* Submission End */
+/* Main End */
+/* Footer Start */
 
 footer {
-	background-color: #bbbbbb;
-	display:flex;
-	padding: 20px;
-	margin-top: 20px;
+	background-color: #f8f8f8;
+	padding: 20px 0;
+	border-top: 1px solid #e3e3e3;
 }
 
-.save {
-	background-color: #9c9c9c;
-	color: #2b2b2b;
-	padding: 3px 5px;
-	font-size: 12pt;
-	margin-right: 15px;
-	margin-left: 400px;
-}
-
-.submit {
-	background-color: #2b2b2b;
-	color:#fff;
-	padding: 3px 5px;
-	font-size: 12pt;
-}
-.fbuttons {
+footer .container {
 	display: flex;
-	align-items: flex-start;
+	justify-content: flex-end;
+	gap: 20px;
 }
 
-/* Main End */
+footer .container button {
+	padding: 10px 0px;
+	width: 200px;
+	border: none;
+	cursor: not-allowed;
+	font-size: 17px;
+}
+
+footer .container button:first-of-type {
+	background-color: #e5e5e5;
+	color: #666;
+}
+
+footer .container button:last-of-type {
+	background-color: #767676;
+	color: #fff;
+}
+
+/* Footer End */
