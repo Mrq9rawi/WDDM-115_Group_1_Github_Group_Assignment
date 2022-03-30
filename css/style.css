@@ -111,35 +111,40 @@ nav img {
 /* Landing Start */
 
 .text {
-	padding-top: 100px;
+	padding-top: 150px;
 }
 
-.main-sub,
-.main-sub2 {
-	font-size: 1.5rem;
-	color: rgb(70, 70, 70);
+.main-sub {
+	margin-bottom: -10px;
+	font-size: 15px;
 }
 
 .main-headline {
-	font-size: 3.5rem;
-	color: rgb(58, 58, 58);
-	font-weight: bold;
-	padding: 20px 0;
+	font-size: 80px;
+}
+
+.main-sub2 {
+	font-size: 20px;
 }
 
 /* Landing End */
-/* Team Members Start */
+/* Group Members Start */
 
 .img-wrap {
 	background-color: rgb(240, 240, 240);
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	padding: 100px 0;
+	padding-top: var(--main-section-padding);
+	padding-bottom: var(--main-section-padding);
 }
 
-.img-wrap img {
-	width: 250px;
+.img-wrap h1 {
+	margin: 0 auto 80px;
+	width: fit-content;
+}
+
+.img-wrap .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
 }
 
 .img-wrap div {
@@ -149,10 +154,9 @@ nav img {
 .img-wrap p {
 	padding-top: 10px;
 	font-size: 1rem;
-	color: inherit;
 }
 
-/* Team Members End */
+/* Group Members End */
 /* Description Start */
 
 main .description {
