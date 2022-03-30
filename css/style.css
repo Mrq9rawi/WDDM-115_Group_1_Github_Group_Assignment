@@ -107,7 +107,11 @@ nav img {
 		text-align: center;
 }
 
-
+.img-wrap p {
+    padding-top: 10px;
+    font-size: 1rem;
+    color: inherit;
+}
 
 /* Small Screen */
 @media (min-width: 768px) {
