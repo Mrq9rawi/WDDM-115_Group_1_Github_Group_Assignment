@@ -191,14 +191,39 @@ main .description .text-content > p {
 }
 
 /* Description End */
+/* Criteria Start */
+
+.criteria .container .wrapper {
+	margin-left: 30px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #707070;
+}
+
+.criteria .container .wrapper > * {
+	margin-bottom: 20px;
+}
+
+.criteria .container .wrapper ul {
+	margin-left: 30px;
+}
+
+.criteria .container .wrapper ul li {
+	margin-bottom: 5px;
+}
+
+.criteria .container .wrapper a {
+	text-decoration: underline;
+}
+
+/* Criteria End */
 /* Image Start */
 
 .img {
-	padding-top: var(--main-section-padding);
+	padding-top: calc(var(--main-section-padding) - 50px);
 }
 
 .img .container img {
-	max-width: 100%;
+	max-width: 90%;
 	margin-left: 30px;
 }
 
