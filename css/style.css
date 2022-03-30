@@ -99,6 +99,9 @@ nav img {
 	padding: 100px 0;
 	}
 
+	.img-wrap img {
+		width: 250px;
+	}
 
 /* Small Screen */
 @media (min-width: 768px) {
