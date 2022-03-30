@@ -97,11 +97,17 @@ nav img {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	padding: 100px 0;
-	}
+}
 
-	.img-wrap img {
+.img-wrap img {
 		width: 250px;
-	}
+}
+
+.img-wrap div {
+		text-align: center;
+}
+
+
 
 /* Small Screen */
 @media (min-width: 768px) {
