@@ -93,6 +93,26 @@ nav img {
     padding: 20px 0;
 }
 
+.img-wrap {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 100px 0;
+}
+
+.img-wrap img {
+		width: 250px;
+}
+
+.img-wrap div {
+		text-align: center;
+}
+
+.img-wrap p {
+    padding-top: 10px;
+    font-size: 1rem;
+    color: inherit;
+}
 
 /* Small Screen */
 @media (min-width: 768px) {
