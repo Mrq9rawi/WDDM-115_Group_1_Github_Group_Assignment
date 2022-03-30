@@ -175,5 +175,7 @@ main .description .text-content > p {
 }
 
 .submission p {
-	padding-left: 40px
+	margin-left: 40px;
+	border: #707070;
+	
 }
