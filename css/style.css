@@ -62,13 +62,25 @@ a {
 /* Header Start */
 
 nav {
+	background-color: rgb(240, 240, 240);
+}
+
+@media (max-width: 767px) {
+	nav {
+		padding: 20px 0;
+	}
+}
+
+nav .container {
 	height: 80px;
-	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding: 0 10%;
-	background-color: #fff;
+}
+
+@media (max-width: 767px) {
+	nav .container {
+		flex-direction: column;
+	}
 }
 
 nav img {
@@ -76,10 +88,15 @@ nav img {
 }
 
 .nav-wrap {
-	width: 200px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
+	flex: 1;
+}
+
+.nav-wrap a {
+	color: rgb(58, 58, 58);
+	padding: 20px;
 }
 
 /* Header End */
@@ -88,18 +105,12 @@ nav img {
 .main-container {
 	position: relative;
 	height: 350px;
-	background-color: rgb(240, 240, 240);
+	height: 100vh;
 }
 
 /* Landing Start */
 
 .text {
-	font-family: inherit;
-	width: 100%;
-	position: absolute;
-	min-width: 42%;
-	width: 100%;
-	padding-left: 10%;
 	padding-top: 100px;
 }
 
@@ -120,6 +131,7 @@ nav img {
 /* Team Members Start */
 
 .img-wrap {
+	background-color: rgb(240, 240, 240);
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
