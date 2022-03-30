@@ -174,8 +174,15 @@ main .description .text-content > p {
 	
 }
 
-.submission p {
+.paragraph {
 	margin-left: 40px;
-	border: #707070;
-	
+	border-radius: 2pt;
+	border-style: groove;
+	background-color: #fff;
+	width: fit-content;
+	padding: 10px 12px;
+}
+
+footer {
+	background-color: #bbbbbb;
 }
