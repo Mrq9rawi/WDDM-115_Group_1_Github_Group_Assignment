@@ -160,12 +160,16 @@ main .description .text-content > p {
 /* Image Start */
 
 .img{
+	display: block;
 	align-content: center;
+	justify-content: center;
 	padding-top: 50px;
+	margin: auto;
 }
-.submission h3{
+.submission h3 {
 	font-size: 18px;
 	font-family: inherit;
 	font-weight: 500;
+	padding-left: 40px;
 	
 }
