@@ -64,6 +64,34 @@ nav img {
     justify-content: space-between;
 }
 
+.main-container {
+    position: relative;
+    height: 350px;
+    background-color: rgb(240, 240, 240);
+}
+
+.text {
+    font-family: inherit;
+    width: 100%;
+    position: absolute;
+    min-width: 42%;
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 100px;
+}
+
+.main-sub, .main-sub2 {
+    font-size: 1.5rem;
+    color: rgb(70, 70, 70);
+}
+
+.main-headline {
+    font-size: 3.5rem;
+    color: rgb(58, 58, 58);
+    font-weight: bold;
+    padding: 20px 0;
+}
+
 
 /* Small Screen */
 @media (min-width: 768px) {
