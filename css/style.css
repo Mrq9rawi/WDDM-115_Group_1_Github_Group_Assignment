@@ -186,6 +186,8 @@ main .description .text-content > p {
 footer {
 	background-color: #bbbbbb;
 	display:flex;
+	padding: 20px;
+	margin-top: 20px;
 }
 
 .save {
@@ -194,4 +196,16 @@ footer {
 	padding: 3px 5px;
 	font-size: 12pt;
 	margin-right: 15px;
+	margin-left: 400px;
+}
+
+.submit {
+	background-color: #2b2b2b;
+	color:#fff;
+	padding: 3px 5px;
+	font-size: 12pt;
+}
+.fbuttons {
+	display: flex;
+	align-items: flex-start;
 }
