@@ -11,17 +11,9 @@
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,"Open Sans", sans-serif;
-	background-color: #fff;
-	color:  rgb(58, 58, 58);
-	width: 100%;
-    height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
+	font-family: "Open Sans", sans-serif;
+	color: rgb(58, 58, 58);
 }
-
-
 
 html {
 	scroll-behavior: smooth;
@@ -44,56 +36,6 @@ a {
 	margin-right: auto;
 }
 
-nav {
-    height: 80px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10%;
-    background-color: #fff;
-}
-
-nav img {
-    height: 25px;
-}
-
-.nav-wrap {
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main-container {
-    position: relative;
-    height: 350px;
-    background-color: rgb(240, 240, 240);
-}
-
-.text {
-    font-family: inherit;
-    width: 100%;
-    position: absolute;
-    min-width: 42%;
-    width: 100%;
-    padding-left: 10%;
-    padding-top: 100px;
-}
-
-.main-sub, .main-sub2 {
-    font-size: 1.5rem;
-    color: rgb(70, 70, 70);
-}
-
-.main-headline {
-    font-size: 3.5rem;
-    color: rgb(58, 58, 58);
-    font-weight: bold;
-    padding: 20px 0;
-}
-
-
 /* Small Screen */
 @media (min-width: 768px) {
 	.container {
@@ -115,11 +57,106 @@ nav img {
 	}
 }
 
-/* Components Start */
-/* Components End */
-
 /* Global Rules End */
 
+/* Header Start */
+
+nav {
+	background-color: rgb(240, 240, 240);
+}
+
+@media (max-width: 767px) {
+	nav {
+		padding: 20px 0;
+	}
+}
+
+nav .container {
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width: 767px) {
+	nav .container {
+		flex-direction: column;
+	}
+}
+
+nav img {
+	height: 25px;
+}
+
+.nav-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex: 1;
+}
+
+.nav-wrap a {
+	color: rgb(58, 58, 58);
+	padding: 20px;
+}
+
+/* Header End */
+/* Main Start */
+
+.main-container {
+	position: relative;
+	height: 350px;
+	height: 100vh;
+}
+
+/* Landing Start */
+
+.text {
+	padding-top: 150px;
+}
+
+.main-sub {
+	margin-bottom: -10px;
+	font-size: 15px;
+}
+
+.main-headline {
+	font-size: 80px;
+}
+
+.main-sub2 {
+	font-size: 20px;
+}
+
+/* Landing End */
+/* Group Members Start */
+
+.img-wrap {
+	background-color: rgb(240, 240, 240);
+	padding-top: var(--main-section-padding);
+	padding-bottom: var(--main-section-padding);
+}
+
+.img-wrap h1 {
+	margin: 0 auto 80px;
+	width: fit-content;
+}
+
+.img-wrap .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.img-wrap div {
+	text-align: center;
+}
+
+.img-wrap p {
+	padding-top: 10px;
+	font-size: 1rem;
+}
+
+/* Group Members End */
 /* Description Start */
 
 main .description {
@@ -154,9 +191,6 @@ main .description .text-content > p {
 }
 
 /* Description End */
-
-
-
 /* Image Start */
 
 .img{
@@ -209,3 +243,5 @@ footer {
 	display: flex;
 	align-items: flex-start;
 }
+
+/* Main End */
