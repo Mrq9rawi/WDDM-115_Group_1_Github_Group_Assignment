@@ -157,25 +157,45 @@ nav img {
 }
 
 /* Group Members End */
-/* Description Start */
-
-main .description {
-	padding-top: var(--main-section-padding);
+/* Project Start */
+main .project {
+	display: grid;
+	grid-template: auto auto auto auto auto / 75% 25%;
+	grid-template-areas:
+		"header header"
+		"description aside"
+		"criteria aside"
+		"img aside"
+		"submission aside";
+	padding: var(--main-section-padding) 20px 0;
 }
 
-main .description .header {
+main .project > .wrapper {
+	border-right: 2px solid #cdcdcd;
+	padding-right: 20px;
+	margin-right: 20px;
+}
+
+main .project .header {
 	margin-bottom: 50px;
-	border-bottom: 2px solid #707070;
+	border-bottom: 2px solid #cdcdcd;
 	padding-bottom: 25px;
+	grid-area: header;
 }
 
-main .description .header h3 {
+main .project .header h3 {
 	font-weight: 300;
 	font-size: 18px;
 }
 
-main .description .header h1 {
+main .project .header h1 {
 	font-size: 40px;
+}
+
+/* Description Start */
+
+main .description {
+	grid-area: description;
 }
 
 main .description .text-content {
@@ -191,4 +211,182 @@ main .description .text-content > p {
 }
 
 /* Description End */
+/* Criteria Start */
+
+main .criteria {
+	grid-area: criteria;
+}
+
+main .criteria .wrapper {
+	margin-left: 30px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #cdcdcd;
+}
+
+main .criteria .wrapper > * {
+	margin-bottom: 20px;
+}
+
+main .criteria .wrapper ul {
+	margin-left: 30px;
+}
+
+main .criteria .wrapper ul li {
+	margin-bottom: 5px;
+}
+
+main .criteria .wrapper a {
+	text-decoration: underline;
+}
+
+/* Criteria End */
+/* Details Start */
+
+main .details {
+	grid-area: aside;
+}
+
+/* Details End */
+/* Image Start */
+
+.img {
+	padding-top: calc(var(--main-section-padding) - 50px);
+	grid-area: img;
+}
+
+.img img {
+	max-width: 90%;
+	margin-left: 30px;
+}
+
+/* Image End */
+/* Submission Start */
+
+.submission {
+	padding-top: var(--main-section-padding);
+	grid-area: submission;
+}
+
+.submission .wrapper {
+	margin-left: 30px;
+	border-top: 2px dashed #cdcdcd;
+	padding-top: 30px;
+}
+
+.submission .wrapper h1 {
+	margin-bottom: 20px;
+}
+
+.submission .wrapper input {
+	width: 95%;
+	height: 90px;
+	border: 2px solid #dddddd;
+	position: relative;
+	outline: none;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+.submission .wrapper input::placeholder {
+	color: #a5a2a2;
+	position: absolute;
+	font-size: 16px;
+}
+
+/* Submission End */
+/* Details Start */
+
+main .details h2 {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #cdcdcd;
+}
+
+main .details .due-date {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	padding-top: 20px;
+}
+
+main .details .due-date .text-content {
+	border-bottom: 1px solid #cdcdcd;
+	flex: 1;
+	padding-bottom: 10px;
+}
+
+main .details .attempts {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #cdcdcd;
+}
+
+main .details .grading {
+	margin-top: 20px;
+}
+
+main .details .grading h3 {
+	margin-bottom: 10px;
+}
+
+main .details .grading .text-content {
+	background-color: #ebebeb;
+	border: 1px solid #cdcdcd;
+	display: flex;
+	align-items: center;
+}
+
+main .details .grading .text-content > div {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: bold;
+	padding: 10px;
+	border-right: 1px solid #cdcdcd;
+}
+
+main .details .grading .text-content p {
+	padding: 10px;
+}
+
+/* Details ُEnd */
+
+/* Project End */
 /* Main End */
+/* Footer Start */
+
+footer {
+	background-color: #f8f8f8;
+	padding: 20px 20px;
+	border-top: 1px solid #cdcdcd;
+}
+
+footer {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+	margin-top: var(--main-section-padding);
+}
+
+footer button {
+	padding: 10px 0px;
+	width: 200px;
+	border: none;
+	cursor: not-allowed;
+	font-size: 17px;
+}
+
+footer button:first-of-type {
+	background-color: #e5e5e5;
+	color: #666;
+}
+
+footer button:last-of-type {
+	background-color: #767676;
+	color: #fff;
+}
+
+/* Footer End */
