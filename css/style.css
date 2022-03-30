@@ -1,0 +1,194 @@
+/* Global Rules Start */
+
+:root {
+	--main-section-padding: 100px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: rgb(58, 58, 58);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Small Screen */
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+/* Large Screen */
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+/* Global Rules End */
+
+/* Header Start */
+
+nav {
+	background-color: rgb(240, 240, 240);
+}
+
+@media (max-width: 767px) {
+	nav {
+		padding: 20px 0;
+	}
+}
+
+nav .container {
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width: 767px) {
+	nav .container {
+		flex-direction: column;
+	}
+}
+
+nav img {
+	height: 25px;
+}
+
+.nav-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex: 1;
+}
+
+.nav-wrap a {
+	color: rgb(58, 58, 58);
+	padding: 20px;
+}
+
+/* Header End */
+/* Main Start */
+
+.main-container {
+	position: relative;
+	height: 350px;
+	height: 100vh;
+}
+
+/* Landing Start */
+
+.text {
+	padding-top: 150px;
+}
+
+.main-sub {
+	margin-bottom: -10px;
+	font-size: 15px;
+}
+
+.main-headline {
+	font-size: 80px;
+}
+
+.main-sub2 {
+	font-size: 20px;
+}
+
+/* Landing End */
+/* Group Members Start */
+
+.img-wrap {
+	background-color: rgb(240, 240, 240);
+	padding-top: var(--main-section-padding);
+	padding-bottom: var(--main-section-padding);
+}
+
+.img-wrap h1 {
+	margin: 0 auto 80px;
+	width: fit-content;
+}
+
+.img-wrap .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.img-wrap div {
+	text-align: center;
+}
+
+.img-wrap p {
+	padding-top: 10px;
+	font-size: 1rem;
+}
+
+/* Group Members End */
+/* Description Start */
+
+main .description {
+	padding-top: var(--main-section-padding);
+}
+
+main .description .header {
+	margin-bottom: 50px;
+	border-bottom: 2px solid #707070;
+	padding-bottom: 25px;
+}
+
+main .description .header h3 {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+main .description .header h1 {
+	font-size: 40px;
+}
+
+main .description .text-content {
+	margin-left: 30px;
+}
+
+main .description .text-content h3 {
+	margin-bottom: 25px;
+}
+
+main .description .text-content > p {
+	margin-bottom: 20px;
+}
+
+/* Description End */
+/* Main End */
